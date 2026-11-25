@@ -1,0 +1,28 @@
+# Local Python environments, bytecode, tool caches and packaging products.
+.venv/
+__pycache__/
+*.py[cod]
+.ruff_cache/
+.pytest_cache/
+.coverage
+build/
+dist/
+*.egg-info/
+
+# Editor and Office scratch files.
+.DS_Store
+Thumbs.db
+~$*
+
+# Local configuration, bundles and disposable experiment outputs.
+.env
+.env.*
+!.env.example
+/*.zip
+/new-results/
+/results/.iaqf-run-*/
+
+# Rebuild these three minute-level tables with python -m iaqf --offline.
+/results/tables/basis_output.csv
+/results/tables/q1_basis_dataset.csv
+/results/tables/q1_analysis_output.csv

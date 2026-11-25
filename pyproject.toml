@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iaqf-stablecoin-study"
+version = "1.0.0"
+description = "Reproduce the March 2023 Bitcoin quote-currency study"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ccxt==4.5.94",
+    "matplotlib==3.11.2",
+    "numpy==2.5.5",
+    "pandas==3.0.1",
+]
+
+[project.scripts]
+iaqf-study = "iaqf.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["iaqf", "iaqf.*"]
+namespaces = false
+
+[tool.ruff]
+target-version = "py312"
+line-length = 88
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I", "B"]

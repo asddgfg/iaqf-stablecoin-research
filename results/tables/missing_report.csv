@@ -1,0 +1,7 @@
+file,expected,actual,missing,duplicate_datetimes,invalid_datetimes,outside_window,off_grid,timestamp_mismatches,invalid_price_rows,invalid_candle_rows,invalid_volume_rows,zero_volume_rows,observed_rows,synthetic_rows,unknown_provenance_rows,invalid_flags
+binanceus_BTC_USDC.csv,30240,30240,0,0,0,0,0,0,0,0,0,12971,0,0,30240,0
+binanceus_BTC_USDT.csv,30240,30240,0,0,0,0,0,0,0,0,0,658,0,0,30240,0
+bitstamp_BTC_USD.csv,30240,30240,0,0,0,0,0,0,0,0,0,502,0,0,30240,0
+bitstamp_BTC_USDC.csv,30240,30240,0,0,0,0,0,0,0,0,0,28072,0,0,30240,0
+coinbase_BTC_USD.csv,30240,30240,0,0,0,0,0,0,0,0,0,290,0,0,30240,0
+coinbase_BTC_USDC.csv,30240,30240,0,0,0,0,0,0,0,0,0,290,0,0,30240,0

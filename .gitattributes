@@ -1,0 +1,17 @@
+# Normalize source and documentation on checkout.
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.toml text eol=lf
+*.yml text eol=lf
+*.txt text eol=lf
+.gitattributes text eol=lf
+.gitignore text eol=lf
+
+# Original input files retain their exact bytes on every checkout. Summaries are
+# text so a local rerun can use the platform's line endings without a Git diff.
+data/raw/*.csv -text
+results/tables/*.csv text
+*.jpg binary
+*.pdf binary
+*.docx binary
